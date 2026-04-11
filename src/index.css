@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 33% 97%;
+    --foreground: 30 10% 15%;
+
+    --card: 36 30% 95%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 36 33% 97%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 38 65% 50%;
+    --primary-foreground: 36 33% 97%;
+
+    --secondary: 145 35% 25%;
+    --secondary-foreground: 36 33% 97%;
+
+    --muted: 36 20% 90%;
+    --muted-foreground: 30 8% 45%;
+
+    --accent: 38 80% 62%;
+    --accent-foreground: 30 10% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 36 25% 85%;
+    --input: 36 25% 85%;
+    --ring: 38 65% 50%;
+
+    --radius: 0.5rem;
+
+    --gold: 38 65% 50%;
+    --gold-light: 38 80% 72%;
+    --gold-dark: 38 55% 38%;
+    --green-deep: 145 35% 25%;
+    --green-leaf: 145 40% 35%;
+    --cream: 36 33% 97%;
+    --cream-dark: 36 25% 90%;
+    --charcoal: 30 10% 12%;
+
+    --gradient-gold: linear-gradient(135deg, hsl(38 80% 72%), hsl(38 65% 50%), hsl(38 55% 38%));
+    --gradient-hero: linear-gradient(180deg, hsl(30 10% 8%) 0%, hsl(30 12% 14%) 50%, hsl(30 10% 8%) 100%);
+    --shadow-gold: 0 8px 32px -8px hsl(38 65% 50% / 0.35);
+    --shadow-luxury: 0 20px 60px -15px hsl(30 10% 12% / 0.25);
+
+    --font-display: 'Playfair Display', serif;
+    --font-elegant: 'Cormorant Garamond', serif;
+    --font-body: 'Montserrat', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-elegant {
+    font-family: var(--font-elegant);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-hero-dark {
+    background: var(--gradient-hero);
+  }
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+  .shadow-luxury {
+    box-shadow: var(--shadow-luxury);
+  }
+  .glow-gold {
+    filter: drop-shadow(0 0 20px hsl(38 65% 50% / 0.4));
+  }
+}
