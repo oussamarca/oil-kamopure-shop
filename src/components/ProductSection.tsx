@@ -111,9 +111,6 @@ const ProductSection = () => {
                 <p className="font-elegant text-xs text-muted-foreground italic leading-relaxed mb-2 line-clamp-1">
                   {product.description}
                 </p>
-                <p className="font-display text-lg font-bold text-primary mb-3">
-                  {product.price}
-                </p>
 
                 {/* WhatsApp order button */}
                 <button
