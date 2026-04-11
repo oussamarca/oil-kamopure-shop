@@ -55,8 +55,8 @@ const ProductSection = () => {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const handleOrder = (product: Product) => {
-    setSelectedProduct(product);
-    setDialogOpen(true);
+    const message = encodeURIComponent(`Hello, I want to order ${product.name}`);
+    window.open(`https://wa.me/212606312350?text=${message}`, '_blank');
   };
 
   return (
