@@ -20,7 +20,7 @@ const products: Product[] = [
   {
     name: "Oil Kamo Pure",
     nameAr: "زيت كامو",
-    price: "150 MAD",
+    price: "80 DH",
     image: productOilKamo,
     description: "Nourishing elixir from Morocco's finest botanicals. 50 ml.",
     features: ["Rich blend of 50 herbs", "Cold-pressed & chemical-free", "Strengthens & revitalizes", "Suitable for all hair types"],
@@ -28,7 +28,7 @@ const products: Product[] = [
   {
     name: "Masque Kamo",
     nameAr: "ماسك كامو",
-    price: "120 MAD",
+    price: "20 DH",
     image: productMasqueKamo,
     description: "Intense hair mask with 90 natural ingredients.",
     features: ["90 natural ingredients", "Deep conditioning formula", "Repairs & hydrates", "Restores shine & softness"],
@@ -36,7 +36,7 @@ const products: Product[] = [
   {
     name: "Herbes de Beauté",
     nameAr: "أعشاب الجمال",
-    price: "80 MAD",
+    price: "10 DH",
     image: productHerbes,
     description: "Premium herbal blend for natural hair care rituals.",
     features: ["Hand-picked herbal blend", "100% natural ingredients", "Traditional Moroccan recipe", "For hair rinses & masks"],
@@ -44,7 +44,7 @@ const products: Product[] = [
   {
     name: "Collection Kamo",
     nameAr: "مجموعة كامو",
-    price: "300 MAD",
+    price: "150 DH",
     image: productCollection,
     description: "Complete set of Oil Kamo, Masque & Herbes de Beauté.",
     features: ["Full care routine", "Best value bundle", "Gift-ready packaging", "All hair types"],
