@@ -105,18 +105,18 @@ const ProductSection = () => {
           />
         </motion.div>
 
-        {/* Product cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {/* Product cards — 2 col mobile, 3 col tablet, 4 col desktop */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8">
           {products.map((product, i) => (
             <motion.div
               key={product.name}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
-              className="group relative bg-background rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-500"
+              transition={{ delay: i * 0.1 }}
+              className="group relative bg-background rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 hover:shadow-xl hover:scale-[1.03] transition-all duration-500"
             >
-              {/* Image with overlay */}
+              {/* Image */}
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
                   src={product.image}
@@ -124,56 +124,35 @@ const ProductSection = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                  <button
-                    onClick={() => handleOrder(product)}
-                    className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full text-white font-body text-sm font-semibold tracking-wide backdrop-blur-sm shadow-lg hover:brightness-110 active:scale-[0.98] transition-all duration-300"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, #25D366 0%, #128C7E 100%)",
-                    }}
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    Commander via WhatsApp
-                  </button>
-                </div>
               </div>
 
               {/* Content */}
-              <div className="p-5">
+              <div className="p-4 md:p-5">
                 <p className="font-body text-[10px] tracking-[0.3em] uppercase text-primary mb-1">
                   {product.nameAr}
                 </p>
-                <h3 className="font-display text-lg font-semibold text-foreground mb-2">
+                <h3 className="font-display text-base md:text-lg font-semibold text-foreground mb-1">
                   {product.name}
                 </h3>
-                <p className="font-elegant text-xs text-muted-foreground italic leading-relaxed mb-3">
+                <p className="font-elegant text-xs text-muted-foreground italic leading-relaxed mb-2 line-clamp-1">
                   {product.description}
                 </p>
-                <ul className="grid grid-cols-2 gap-x-3 gap-y-1.5">
-                  {product.features.map((f) => (
-                    <li
-                      key={f}
-                      className="flex items-center gap-1.5 font-body text-[11px] text-foreground/70"
-                    >
-                      <span className="w-1 h-1 rounded-full bg-primary flex-shrink-0" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
+                <p className="font-display text-lg font-bold text-primary mb-3">
+                  {product.price}
+                </p>
 
-                {/* Always-visible mobile button */}
+                {/* WhatsApp order button */}
                 <button
                   onClick={() => handleOrder(product)}
-                  className="mt-4 w-full flex md:hidden items-center justify-center gap-2 px-6 py-3 rounded-full text-white font-body text-sm font-semibold tracking-wide shadow-lg hover:brightness-110 active:scale-[0.98] transition-all duration-300"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-white font-body text-xs md:text-sm font-semibold tracking-wide shadow-lg hover:brightness-110 active:scale-[0.98] transition-all duration-300"
                   style={{
                     background:
                       "linear-gradient(135deg, #25D366 0%, #128C7E 100%)",
                   }}
                 >
                   <MessageCircle className="w-4 h-4" />
-                  Commander via WhatsApp
+                  <span className="hidden sm:inline">Order via WhatsApp</span>
+                  <span className="sm:hidden">Order</span>
                 </button>
               </div>
             </motion.div>
