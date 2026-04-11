@@ -22,45 +22,34 @@ const products: Product[] = [
     nameAr: "زيت كامو",
     price: "150 MAD",
     image: productOilKamo,
-    description:
-      "Huile de Kamo Pure — a nourishing and brilliant elixir crafted from Morocco's finest botanicals. 50 ml / 1.7 fl.oz of pure, concentrated luxury.",
-    features: [
-      "Rich blend of 50 herbs",
-      "Cold-pressed & chemical-free",
-      "Strengthens & revitalizes",
-      "Suitable for all hair types",
-    ],
+    description: "Nourishing elixir from Morocco's finest botanicals. 50 ml.",
+    features: ["Rich blend of 50 herbs", "Cold-pressed & chemical-free", "Strengthens & revitalizes", "Suitable for all hair types"],
   },
   {
     name: "Masque Kamo",
     nameAr: "ماسك كامو",
     price: "120 MAD",
     image: productMasqueKamo,
-    description:
-      "Masque Kamo — an intense hair mask with a unique formula of 90 natural ingredients. Deep nourishment for damaged and dry hair.",
-    features: [
-      "90 natural ingredients",
-      "Deep conditioning formula",
-      "Repairs & hydrates",
-      "Restores shine & softness",
-    ],
+    description: "Intense hair mask with 90 natural ingredients.",
+    features: ["90 natural ingredients", "Deep conditioning formula", "Repairs & hydrates", "Restores shine & softness"],
   },
   {
     name: "Herbes de Beauté",
     nameAr: "أعشاب الجمال",
     price: "80 MAD",
     image: productHerbes,
-    description:
-      "Herbes de Beauté — a premium herbal blend for natural hair care rituals. Hand-selected botanicals for a luxurious at-home treatment.",
-    features: [
-      "Hand-picked herbal blend",
-      "100% natural ingredients",
-      "Traditional Moroccan recipe",
-      "For hair rinses & masks",
-    ],
+    description: "Premium herbal blend for natural hair care rituals.",
+    features: ["Hand-picked herbal blend", "100% natural ingredients", "Traditional Moroccan recipe", "For hair rinses & masks"],
+  },
+  {
+    name: "Collection Kamo",
+    nameAr: "مجموعة كامو",
+    price: "300 MAD",
+    image: productCollection,
+    description: "Complete set of Oil Kamo, Masque & Herbes de Beauté.",
+    features: ["Full care routine", "Best value bundle", "Gift-ready packaging", "All hair types"],
   },
 ];
-
 const ProductSection = () => {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
