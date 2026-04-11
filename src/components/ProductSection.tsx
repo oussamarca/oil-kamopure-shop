@@ -79,21 +79,6 @@ const ProductSection = () => {
           </h2>
         </motion.div>
 
-        {/* Collection hero image */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="flex justify-center mb-20"
-        >
-          <img
-            src={productCollection}
-            alt="Oil Kamo full collection"
-            className="rounded-3xl shadow-luxury max-h-[400px] w-auto object-cover"
-            loading="lazy"
-          />
-        </motion.div>
-
         {/* Product cards — 2 col mobile, 3 col tablet, 4 col desktop */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-8">
           {products.map((product, i) => (
