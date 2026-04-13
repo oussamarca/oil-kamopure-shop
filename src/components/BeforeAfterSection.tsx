@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import beforeAfterImg from "@/assets/before-after-real.png";
+import beforeAfterImg from "@/assets/before-after-hair.jpg";
 
 const BeforeAfterSection = () => {
   return (
