@@ -2,15 +2,15 @@ import { motion } from "framer-motion";
 import { Leaf, Sparkles, Droplets, Shield } from "lucide-react";
 
 const benefits = [
-  { icon: Leaf, title: "50 Natural Herbs", desc: "A rich formula of 50 carefully selected botanical ingredients." },
-  { icon: Sparkles, title: "Radiant Shine", desc: "Restores brilliance and luminosity to dull, lifeless hair." },
-  { icon: Droplets, title: "Deep Nourishment", desc: "Penetrates deeply to hydrate and strengthen every strand." },
-  { icon: Shield, title: "100% Pure", desc: "No chemicals, no parabens — only nature's finest extracts." },
+  { icon: Droplets, title: "تقليل تساقط الشعر", desc: "تركيبة طبيعية كتساعد على تقليل التساقط من الأسابيع الأولى." },
+  { icon: Shield, title: "تقوية بصيلات الشعر", desc: "كتغذي البصيلات بعمق وكتقويها من الجذور." },
+  { icon: Sparkles, title: "ملء الفراغات", desc: "كتحفز نمو الشعر الجديد فالمناطق الفارغة." },
+  { icon: Leaf, title: "إزالة القشرة وترطيب الفروة", desc: "كتنظف الفروة من القشرة وكتوفر ترطيب عميق." },
 ];
 
 const BenefitsSection = () => {
   return (
-    <section id="benefits" className="py-24 bg-background relative">
+    <section id="benefits" className="py-24 bg-card relative" dir="rtl">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -18,9 +18,9 @@ const BenefitsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-3">Why Oil Kamo</p>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">
-            Nature's <span className="text-gradient-gold">Luxury</span>
+          <p className="font-body text-xs tracking-[0.3em] uppercase text-primary mb-3">فوائد Oil Kamo</p>
+          <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">
+            ليش <span className="text-gradient-gold">Oil Kamo</span>؟
           </h2>
         </motion.div>
 
@@ -32,7 +32,7 @@ const BenefitsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group bg-card rounded-2xl p-8 text-center shadow-luxury hover:shadow-gold transition-shadow duration-500"
+              className="group bg-background rounded-2xl p-8 text-center shadow-luxury hover:shadow-gold transition-shadow duration-500"
             >
               <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                 <b.icon className="w-6 h-6 text-primary" />
