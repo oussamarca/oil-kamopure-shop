@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import beforeAfter from "@/assets/before-after.png";
-import usageApplication from "@/assets/usage-application.jpg";
-import productOilKamo from "@/assets/product-oil-kamo.jpg";
 
 const ImageGallerySection = () => {
   return (
@@ -23,54 +21,16 @@ const ImageGallerySection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {/* Before / After */}
+        <div className="flex justify-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0 }}
-            className="rounded-2xl overflow-hidden border border-border/50"
+            className="rounded-2xl overflow-hidden border border-border/50 max-w-3xl"
           >
             <img
               src={beforeAfter}
               alt="Hair transformation before and after using Oil Kamo"
-              className="w-full h-full object-cover"
-              loading="lazy"
-              width={1024}
-              height={768}
-            />
-          </motion.div>
-
-          {/* Product */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="rounded-2xl overflow-hidden border border-border/50"
-          >
-            <img
-              src={productOilKamo}
-              alt="Oil Kamo natural hair oil bottle"
-              className="w-full h-full object-cover"
-              loading="lazy"
-              width={1024}
-              height={768}
-            />
-          </motion.div>
-
-          {/* Usage */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="rounded-2xl overflow-hidden border border-border/50"
-          >
-            <img
-              src={usageApplication}
-              alt="Applying natural hair oil to scalp"
               className="w-full h-full object-cover"
               loading="lazy"
               width={1024}
