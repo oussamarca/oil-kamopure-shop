@@ -32,7 +32,7 @@ const ImageGallerySection = () => {
             <img
               src={beforeAfter}
               alt="Hair transformation before and after using Oil Kamo"
-              className="w-full h-full object-cover"
+              className="w-full h-[400px] object-cover"
               loading="lazy"
             />
           </motion.div>
