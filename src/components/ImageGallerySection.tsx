@@ -27,7 +27,7 @@ const ImageGallerySection = () => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden border border-border/50 h-[400px] md:h-[500px] max-w-[280px] md:max-w-[350px]"
+            className="rounded-2xl overflow-hidden border border-border/50 h-[400px] md:h-[500px]"
           >
             <img
               src={beforeAfter}
