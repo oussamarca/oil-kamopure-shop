@@ -19,9 +19,9 @@ const HeroSection = () => {
             100% Natural · 50 Herbs Blend
           </p>
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-            <span className="text-cream">The Power of</span>
+            <span className="text-cream">Oil Kamo —</span>
             <br />
-            <span className="text-gradient-gold">Pure Nature</span>
+            <span className="text-gradient-gold">Natural Hair Treatment</span>
           </h1>
           <p className="font-elegant text-xl md:text-2xl text-cream/60 max-w-lg mx-auto lg:mx-0 mb-8 italic">
             A luxurious blend of 50 precious herbs, crafted for extraordinary hair transformation.
