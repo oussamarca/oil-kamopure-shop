@@ -83,7 +83,9 @@ const WhatsAppOrderDialog = ({
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-2" noValidate>
           <div>
+            <label htmlFor="order-name" className="sr-only">Votre Nom</label>
             <input
+              id="order-name"
               type="text"
               placeholder="Votre Nom"
               value={name}
@@ -94,7 +96,9 @@ const WhatsAppOrderDialog = ({
             {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
           </div>
           <div>
+            <label htmlFor="order-city" className="sr-only">Votre Ville</label>
             <input
+              id="order-city"
               type="text"
               placeholder="Votre Ville"
               value={city}

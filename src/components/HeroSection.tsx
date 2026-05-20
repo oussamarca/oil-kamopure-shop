@@ -37,7 +37,7 @@ const HeroSection = () => {
               href="#benefits"
               className="inline-block px-8 py-3.5 rounded-full border border-gold/30 text-cream/80 font-body text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-all duration-300"
             >
-              Learn More
+              View Benefits
             </a>
           </div>
         </motion.div>

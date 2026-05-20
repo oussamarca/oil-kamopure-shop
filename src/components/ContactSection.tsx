@@ -83,7 +83,9 @@ const ContactSection = () => {
           noValidate
         >
           <div>
+            <label htmlFor="contact-name" className="sr-only">Your Name</label>
             <input
+              id="contact-name"
               type="text"
               placeholder="Your Name"
               value={form.name}
@@ -94,7 +96,9 @@ const ContactSection = () => {
             {errors.name && <p className="text-destructive text-xs mt-1 font-body">{errors.name}</p>}
           </div>
           <div>
+            <label htmlFor="contact-phone" className="sr-only">Phone / WhatsApp Number</label>
             <input
+              id="contact-phone"
               type="tel"
               placeholder="Phone / WhatsApp Number"
               value={form.phone}
@@ -105,7 +109,9 @@ const ContactSection = () => {
             {errors.phone && <p className="text-destructive text-xs mt-1 font-body">{errors.phone}</p>}
           </div>
           <div>
+            <label htmlFor="contact-message" className="sr-only">Your message or order details</label>
             <textarea
+              id="contact-message"
               placeholder="Your message or order details..."
               value={form.message}
               onChange={(e) => handleChange("message", e.target.value)}
