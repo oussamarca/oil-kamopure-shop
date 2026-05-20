@@ -12,16 +12,21 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <HeroSection />
-      <BenefitsSection />
-      <ProductSection />
-      <ImageGallerySection />
-      <HowToUseSection />
-      <FAQSection />
-      <ContactSection />
+      <main>
+        <HeroSection />
+        <BenefitsSection />
+        <ProductSection />
+        <ImageGallerySection />
+        <HowToUseSection />
+        <FAQSection />
+        <ContactSection />
+      </main>
       <FooterSection />
     </div>
   );
 };
+
+export default Index;
+
 
 export default Index;

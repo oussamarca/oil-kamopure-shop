@@ -57,7 +57,10 @@ const HeroSection = () => {
               className="relative z-10 max-h-[550px] w-auto glow-gold drop-shadow-2xl"
               width={500}
               height={600}
+              fetchPriority="high"
+              decoding="async"
             />
+
           </div>
         </motion.div>
       </div>
