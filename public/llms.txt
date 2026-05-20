@@ -1,0 +1,13 @@
+# Oil Kamo
+
+> Premium natural hair oil crafted from a blend of 50 Moroccan herbs. Cold-pressed, 100% natural, ordered directly via WhatsApp.
+
+Oil Kamo is a Morocco-inspired natural beauty brand offering hair oils, masks, and herbal blends. Orders are placed through WhatsApp (+212 606 312 350) and delivered across Morocco.
+
+## Pages
+
+- [Home](/): Brand overview, product collection, benefits, how to use, FAQ, and contact.
+
+## Optional
+
+- Products featured: Oil Kamo Pure (80 MAD), Masque Kamo (20 MAD), Herbes de Beauté (10 MAD), Collection Kamo (150 MAD).
