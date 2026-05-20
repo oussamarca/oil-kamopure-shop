@@ -22,12 +22,12 @@ const ImageGallerySection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden border border-border/50 h-[400px] md:h-[500px]"
+            className="md:col-span-2 rounded-2xl overflow-hidden border border-border/50 h-[400px] md:h-[500px]"
           >
             <img
               src={beforeAfter}
@@ -42,7 +42,7 @@ const ImageGallerySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="rounded-2xl overflow-hidden border border-border/50 h-[400px] md:h-[500px]"
+            className="md:col-span-1 rounded-2xl overflow-hidden border border-border/50 h-[400px] md:h-[500px]"
           >
             <img
               src={testimonial}
